@@ -29,8 +29,8 @@ spec:
       http:
         paths:
           {{- range .paths }}
-          - path: {{ .path }}
-            {{- with .pathType }}
+          - path: {{ .path | quote }}
+            {{- with .pathType | quote }}
             pathType: {{ . }}
             {{- end }}
             backend:
