@@ -20,7 +20,7 @@ func main() {
 	router.GET("/query", query)
 
 	// Start the server and listen on port 8080
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080")
 
 }
 

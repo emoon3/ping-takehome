@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: ping-takehome-configmap
+data:
+    days: "{{ .Values.configmap.days }}"
+    function: "{{ .Values.configmap.function }}"
+    symbol: "{{ .Values.configmap.symbol }}"
