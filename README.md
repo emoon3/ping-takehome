@@ -4,10 +4,11 @@ Assumptions are that you have a working minikube config (though any kubernetes c
 
 1. Clone the repo
 2. Navigate to the top level directory (ping-takehome)
-3. Update the ping-takehome/values.yml file replacing the placehold for the key parameter with a working apikey
-4. Run chmod+x makefile
-5. Run ./makefile
-6. After the makefile runs, you should be able to connect to ping-takehome.local/query and get a JSON payload
+3. To build the Docker image run go build -o ping main.go. Then run docker build -t ping-takehome .
+5. Update the ping-takehome/values.yml file replacing the placehold for the key parameter with a working apikey
+6. Run chmod+x makefile
+7. Run ./makefile
+8. After the makefile runs, you should be able to connect to ping-takehome.local/query and get a JSON payload
 
 (If you are not deploying on minikube, run the commands in the makefile)
 
