@@ -9,6 +9,8 @@ Assumptions are that you have a working minikube config (though any kubernetes c
 5. Run ./makefile
 6. After the makefile runs, you should be able to connect to ping-takehome.local/query and get a JSON payload
 
+(If you are not deploying on minikube, run the commands in the makefile)
+
 I thought about setting up vault to store the api key, but that would add more time. I also thought about setting up prometheus and grafana for monitoring or even ArgoCD, but didn't want this to take too long.
 
 I look forward to feedback.
